@@ -1,0 +1,26 @@
+{
+  "base_url": "https://traveldeal.nl",
+  "url_2": "/api/graphql?receipt",
+  "variables": {
+    "children": [],
+    "adults": 2,
+    "airlineTicketTable": null,
+    "airport": null,
+    "date": "2023-08-22",
+    "discountCode": null,
+    "flightTicket": null,
+    "giftCards": [],
+    "mealType": "breakfast_dinner",
+    "nights": 2,
+    "cancellationPolicy": false,
+    "offerId": 354581,
+    "rooms": [
+      {
+        "adults": 2,
+        "children": [],
+        "id": 1152328
+      }
+    ]
+  },
+  "query": "fragment money on Money {\n  amount\n  currencyCode\n  __typename\n}\n\nmutation ($adults: Int, $airlineTicketTable: AirlineTicketTableArgument, $airport: String, $children: [Int] = [], $date: DateTime, $discountCode: String, $flightTicket: FlightTicketArgument, $giftCards: [GiftCardArgument!], $mealType: MealType, $nights: Int, $cancellationPolicy: Boolean, $offerId: Int!, $rooms: [ReceiptRoomArgument!], $token: String) {\n  createReceipt(\n    adults: $adults\n    airlineTicketTable: $airlineTicketTable\n    airport: $airport\n    children: $children\n    date: $date\n    discountCode: $discountCode\n    flightTicket: $flightTicket\n    giftCards: $giftCards\n    mealType: $mealType\n    nights: $nights\n    cancellationPolicy: $cancellationPolicy\n    offerId: $offerId\n    rooms: $rooms\n    token: $token\n  ) {\n    arrivalDate\n    departureDate\n    nights\n    mealType\n    airport\n    cancellationPolicy {\n      allowed\n      hours\n      description\n      __typename\n    }\n    discounts {\n      description\n      price {\n        ...money\n        __typename\n      }\n      quantity\n      title\n      __typename\n    }\n    fees {\n      price {\n        ...money\n        __typename\n      }\n      quantity\n      title\n      __typename\n    }\n    isLive\n    products {\n      adults\n      children\n      description\n      id\n      price {\n        ...money\n        __typename\n      }\n      quantity\n      title\n      __typename\n    }\n    surcharges {\n      description\n      price {\n        ...money\n        __typename\n      }\n      quantity\n      title\n      isDeposit\n      isIncludedInTotal\n      __typename\n    }\n    title\n    token\n    total {\n      ...money\n      __typename\n    }\n    totalWithSurcharges {\n      ...money\n      __typename\n    }\n    usps\n    __typename\n  }\n}"
+}

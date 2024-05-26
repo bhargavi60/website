@@ -1,0 +1,54 @@
+{
+  "base_url": "https://api.voordeeluitjes.nl",
+  "url_2": "/api/Booking/Overview?partnerId=6&ln=nl",
+  "packageId": 12661,
+  "locationId":1105,
+  "actionId": 316,
+  "extraNights": 0,
+  "partnerId": 6,
+  "numberOfRooms": 1,
+  "numberOfNights": 2,
+  "arrivalDate": "2023-08-20",
+  "leaveDate": "2023-08-22",
+  "accommodations": [
+    {
+      "id":12736,
+      "key": "9a229a22-9a22-9a22-9a22-9a229a229a22",
+      "adults": 2,
+      "teens": 0,
+      "children": 0,
+      "babies": 0,
+      "pets": 0,
+      "name": "Junior suite",
+      "extras": []
+    }
+  ],
+  "roomsInfo": [
+    {
+      "room": 1,
+      "noOfAdults": 2,
+      "occupancyInfo": []
+    }
+  ],
+  "extras": [
+    {
+      "id": 8278,
+      "amount1": null,
+      "amount2": null,
+      "answers": null,
+      "dates": []
+    }
+  ],
+  "hasCancellationInsurance": false,
+  "hasPostalConfirmation": false,
+  "payType": 1,
+  "payUpFront": false,
+  "paymentDetails": {
+    "paymentMethod": null,
+    "paymentGateway": null
+  },
+  "discountCode": null,
+  "airmiles": null,
+  "isGift": false,
+  "hasOccupancySettings": true
+}

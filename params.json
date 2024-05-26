@@ -1,0 +1,111 @@
+{
+  "site": [
+    {
+      "name": "VU",
+      "base_url": "https://api.voordeeluitjes.nl",
+      "url_2": "/api/Booking/Overview?partnerId=6&ln=nl",
+      "arrivalDate": "2023-11-22",
+      "end_date": "2023-11-25",
+      "location": [
+        {
+          "locationId": 148,
+          "hotel_name": "Hof Van",
+          "package": [
+            {
+              "packageId": 1777,
+              "extras": {
+                "id": 8391
+              },
+              "accommodations": [
+                {
+                  "id": 23,
+                  "name": "Comfort Kamer"
+                },
+                {
+                  "id": 14879,
+                  "name": "Delux Kamer Met Balkon"
+                },
+                {
+                  "id": 14880,
+                  "name": "Junior Suite Met Balkon"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationId": 1526,
+          "hotel_name": "grand Hotel",
+          "package": [
+            {
+              "packageId": 9871,
+              "extras": {
+                "id": 8181
+              },
+              "accommodations": [
+                {
+                  "id": 3421,
+                  "name": "Comfort Kamer"
+                },
+                {
+                  "id": 3605,
+                  "name": "Luxe kamer"
+                },
+                {
+                  "id": 3606,
+                  "name": "superior kamer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationId": 1105,
+          "hotel_name": "Golden Tulip",
+          "package": [
+            {
+              "packageId": 12661,
+              "extras": {
+                "id": 8278
+              },
+              "accommodations": [
+                {
+                  "id": 2493,
+                  "name": "Standard Kamer"
+                },
+                {
+                  "id": 2494,
+                  "name": "Superior Kamer"
+                },
+                {
+                  "id": 12736,
+                  "name": "Junior Suite"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TD",
+      "base_url": "https://traveldeal.nl",
+      "url_2": "/api/graphql?receipt",
+      "variables": {
+        "date": "2023-11-20",
+        "end_date": "2023-11-25"
+      },
+      "rooms":[
+        {
+          "id": 1152328
+        },
+        {
+          "id": 1152329
+        },
+        {
+          "id": 1152330
+        }
+      ]
+    }
+  ]
+}
